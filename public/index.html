@@ -60,13 +60,13 @@
                               </div>
                               <div class="row footer-icons">
                                 <div class="col-4">
-                                    <a class="footer-anchor" href="https://www.facebook.com/hempaffair/"><i class="fa fa-facebook fa-2x"></i></a>
+                                    <a target="_blank" class="footer-anchor" href="https://www.facebook.com/hempaffair/"><i class="fa fa-facebook fa-2x"></i></a>
                                 </div>
                                 <div class="col-4">
-                                    <a class="footer-anchor" href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                                    <a target="_blank" class="footer-anchor" href="#"><i class="fa fa-twitter fa-2x"></i></a>
                                 </div>
                                 <div class="col-4">
-                                    <a class="footer-anchor" href="https://www.instagram.com/hempaffair19/"><i class="fa fa-instagram fa-2x"></i></a>
+                                    <a target="_blank" class="footer-anchor" href="https://www.instagram.com/hempaffair19/"><i class="fa fa-instagram fa-2x"></i></a>
                                 </div>
                                 </div>
                                 <div class="row">
@@ -130,36 +130,7 @@
                 
               </script>
               
-              <!-- <div class="carousel-wrapper container">
-
-                  <div class="left-outer">
-                      <div class="left-inner">
-                          
-                          <img class="left-roll" src="images\rollLeft.png">
-                          <img class="left-roll-cover" src="images\coverleft.png">
-                      </div>
-                    </div>
               
-                        <div class="center-outer">
-                      <div class="center-inner">
-                          <img class="center-img" src="images\centre.png">
-                          <img class="center-img-cover" src="images\centrecover.png">
-                      </div>
-                      
-                    </div>
-              
-                    <div class="right-outer">
-                        <div class="right-inner">
-                            
-                            <img class="right-roll" src="images\rollRight.png">
-                            <img class="right-roll-cover" src="images\coverright.png">
-                        </div>
-                      </div>
-              
-                    
-              </div>
-              <button id="car-left">left</button><button disabled id="car-right">right</button>
-                <hr> -->
 
               <script id="about-template" type="text/x-handlebars-template">
                 <div class="container" style="margin-bottom: 80px;">
@@ -191,10 +162,17 @@
                         </div>
                       </div>
                 
-                          <div class="center-outer">
+                          <div class="center-outer" style="position: relative;">
                         <div class="center-inner">
                             <img class="center-img" src="images\centre.png">
                             <img class="center-img-cover" src="images\centrecover.png">
+                        </div>
+                        <div style="position: absolute; top: 50px ;left: 100px;padding-right: 50px">
+                          <h1 >{{heading}}</h1>
+                          
+                          <br/>
+                          <br/>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                         
                       </div>
@@ -249,6 +227,14 @@
                               Address line 3<br>
                           </address>
                         </div>
+                        
+                          </div>
+                          <div class="row">
+                              <div class="col-12" style="padding:0;">
+                                  <a href="https://web.whatsapp.com/send?phone=919953229137&text=" target="_blank" class="footer-anchor">
+                                   Let's Whatsapp!
+                                  </a>
+                                </div>
                           </div>
                       </div>
                       

@@ -32,7 +32,7 @@ const router = new Router({
   });
   
   router.add('/products', () => {
-
+    var heading='Yarn';
     var counter = 0;
 
 $(document).ready(function() {
@@ -59,7 +59,9 @@ $(document).ready(function() {
     });
   });
 
-    let html = productsTemplate();
+    let html = productsTemplate({
+      heading: heading,
+    });
     el.html(html);
   });
 
@@ -74,9 +76,10 @@ $(document).ready(function() {
   
    // Highlight Active Menu on Refresh/Page Reload
   const link = $(`a[href$='${window.location.pathname}']`);
+  
   link.addClass('active');
   
-  $('a').on('click', (event) => {
+  $('a:not(.footer-anchor)').on('click', (event) => {
     // Block browser page load
     event.preventDefault();
   
