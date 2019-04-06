@@ -3,6 +3,7 @@ var counter = 0;
 
 $(document).ready(function() {
     $('#car-left').on('click', function(){
+      console.log('deef');
         counter++;
       $(".center-img").css("transform","translateX("+counter*-33.33+"%)");
       $(".left-roll").css("transform","translateX("+counter*-45+"%)");
